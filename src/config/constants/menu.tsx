@@ -58,6 +58,11 @@ const menuConfig = [
       },
     ],
   },
+  {
+    key: '/chaos/evaluation-report',
+    label: i18n.t('Evaluation Report'),
+    to: `/chaos/evaluation-report?${commonUrlStr}`,
+  },
 ];
 
 // 要匹配哪个二级导航

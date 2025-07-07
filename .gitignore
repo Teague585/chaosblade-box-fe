@@ -4,3 +4,11 @@ coverage
 build
 *.css.d.ts
 .DS_Store
+
+# MacOS
+*.bak
+package-lock.json
+package.json
+tsconfig.json
+webpack.config.js
+src/typing.d.ts
