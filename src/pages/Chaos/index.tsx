@@ -28,6 +28,7 @@ const WorkspaceDetail = lazy(() => import('./WorkspaceDetail'));
 
 const SceneFunction = lazy(() => import('./SceneFunction'));
 const Overview = lazy(() => import('./Overview'));
+const EvaluationReport = lazy(() => import('./EvaluationReport'));
 
 const { Switch, Route, useRouteMatch } = router;
 const Arch: FC = () => {
@@ -45,6 +46,7 @@ const Arch: FC = () => {
       <Route exact path={`${path}/expertise/editor`} component={ExpertiseEditor} />
       <Route exact path={`${path}/expertise/list`} component={ExpertiseList} />
       <Route exact path={`${path}/expertise/detail`} component={ExpertiseDetail} />
+      <Route exact path={`${path}/evaluation-report`} component={EvaluationReport} />
       <Route exact path={`${path}/application`} component={AppLication} />
       <Route exact path={`${path}/application/detail`} component={ApplicationDetail} />
       <Route exact path={`${path}/application/scopelist`} component={ScopeList} />

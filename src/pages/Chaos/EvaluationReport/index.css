@@ -1,0 +1,425 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.header {
+  margin-bottom: 24px;
+  padding: 16px;
+  border: 1px solid #D1D5D9;
+  border-radius: 4px;
+  background: #FAFAFA;
+}
+
+/* 4列对齐布局 - 与下方指标区域列宽保持一致 */
+.alignedLayout {
+  display: flex;
+  align-items: flex-start;
+}
+
+.leftSection {
+  width: 200px; /* 与.metricCategory同宽 */
+  flex-shrink: 0;
+}
+
+.middlePlaceholder {
+  width: 120px; /* 与.subMetrics固定宽度对齐 */
+  flex-shrink: 0;
+  border-right: 1px solid #E5E5E5;
+}
+
+/* GaussDB配置列 - 与下方GaussDB数据列对齐 */
+.gaussDbColumn {
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 8px;
+  border-right: 1px solid #E5E5E5;
+}
+
+/* OceanBase配置列 - 与下方OceanBase数据列对齐 */
+.oceanBaseColumn {
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 8px;
+}
+
+.suiteConfig {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.suiteLabel {
+  font-size: 14px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.suiteSelect {
+  width: 100%;
+  max-width: 150px;
+}
+
+.suiteDesc {
+  color: #666666 !important;
+  text-decoration: none;
+  padding: 0;
+  font-size: 12px;
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: 8px;
+  align-self: flex-start;
+}
+
+.dbTitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background: #666666;
+  padding: 6px 16px;
+  border-radius: 2px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.configRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.configLabel {
+  font-size: 12px;
+  color: #333333;
+  min-width: 40px;
+  flex-shrink: 0;
+}
+
+.configSelect {
+  flex: 1;
+  min-width: 80px;
+}
+
+.metricsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.segment {
+  border: 1px solid #D1D5D9;
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.metricHeader {
+  display: flex;
+  min-height: 120px;
+  align-items: stretch;
+}
+
+.metricCategory {
+  background: #666666;
+  color: #fff;
+  padding: 12px;
+  width: 200px; /* 与.leftSection同宽 */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.categoryTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.categoryDesc {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #f0f0f0;
+}
+
+.subMetrics {
+  width: 120px; /* 与.middlePlaceholder固定宽度对齐 */
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+  border-right: 1px solid #E5E5E5;
+  justify-content: center;
+}
+
+.subMetricItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px; /* 固定高度确保对齐 */
+  box-sizing: border-box;
+}
+
+.subMetricTitle {
+  background: #666666;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+/* GaussDB数据列 */
+.gaussColumn {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 140px;
+  border-right: 1px solid #E5E5E5;
+  justify-content: center;
+}
+
+/* OceanBase数据列 */
+.oceanColumn {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.metricValue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  padding: 6px 10px;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  background: #FAFAFA;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.valueContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.valueText {
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+}
+
+.unit {
+  font-size: 12px;
+  color: #666666;
+}
+
+.linkIcon {
+  color: #0064C8;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.linkIcon:hover {
+  color: #0052A3;
+}
+
+/* 为不同指标类型添加特殊样式 */
+.metricValue .valueText[data-type="success"] {
+  color: #63BA4D;
+}
+
+.metricValue .valueText[data-type="warning"] {
+  color: #FFC440;
+}
+
+.metricValue .valueText[data-type="error"] {
+  color: #D93026;
+}
+
+.metricValue .valueText[data-type="info"] {
+  color: #0064C8;
+}
+
+/* 强制保持水平布局 */
+.subMetricItem {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+}
+
+.gaussColumn,
+.oceanColumn {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  flex: 1;
+  justify-content: center !important;
+}
+
+/* 响应式设计 - 保持4列对齐但适配小屏幕 */
+@media (max-width: 1200px) {
+  /* 保持对齐布局，调整尺寸 */
+  .leftSection {
+    width: 160px;
+  }
+  
+  .metricCategory {
+    width: 160px;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .middlePlaceholder {
+    width: 100px;
+  }
+  
+  .subMetrics {
+    width: 100px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .gaussDbColumn,
+  .oceanBaseColumn {
+    min-width: 120px;
+  }
+  
+  .gaussColumn,
+  .oceanColumn {
+    min-width: 120px;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .metricValue {
+    padding: 5px 7px;
+    height: 28px;
+  }
+  
+  .valueText {
+    font-size: 12px;
+  }
+  
+  .subMetricTitle {
+    font-size: 11px;
+    padding: 5px 7px;
+  }
+  
+  .subMetricItem {
+    height: 28px;
+  }
+  
+
+}
+
+/* 极小屏幕优化 */
+@media (max-width: 768px) {
+  .leftSection {
+    width: 120px;
+  }
+  
+  .metricCategory {
+    width: 120px;
+    padding: 8px;
+    justify-content: center;
+  }
+  
+  .categoryTitle {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .categoryDesc {
+    font-size: 11px;
+  }
+  
+  .middlePlaceholder {
+    width: 80px;
+  }
+  
+  .subMetrics {
+    width: 80px;
+    padding: 8px;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .gaussDbColumn,
+  .oceanBaseColumn {
+    min-width: 90px;
+  }
+  
+  .gaussColumn,
+  .oceanColumn {
+    min-width: 90px;
+    padding: 8px;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .metricValue {
+    padding: 4px 5px;
+    height: 26px;
+  }
+  
+  .valueText {
+    font-size: 11px;
+  }
+  
+  .unit {
+    font-size: 10px;
+  }
+  
+  .subMetricTitle {
+    font-size: 10px;
+    padding: 4px 5px;
+  }
+  
+  .subMetricItem {
+    height: 26px;
+  }
+  
+  .linkIcon {
+    font-size: 10px;
+  }
+  
+
+  
+  .suiteConfig {
+    gap: 6px;
+  }
+  
+  .suiteSelect {
+    max-width: 100px;
+  }
+} 
